@@ -1,0 +1,276 @@
+Mono path[0] = 'E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Managed'
+Mono config path = 'E:/SteamLibrary/steamapps/common/Graveyard Keeper/MonoBleedingEdge/etc'
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/lib/usr/lib/libSystem.dylib
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/lib/usr/lib/libSystem.dylib.dll
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/lib/usr/lib/libSystem.dylib
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/libc.so.6
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/libc.so.6.dll
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/libc.so.6
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/data-0A89BE58.dll
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/data-0E188020.dll
+Initialize engine version: 2020.3.17f1 (a4537701e4ab)
+[Subsystems] Discovering subsystems at path E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x1638)
+    Vendor:   (null)
+    VRAM:     2064 MB
+    Driver:   31.0.14057.5006
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.162 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+D3D11 device created for Microsoft Media Foundation video decoding.
+<RI> Initialized touch support.
+UnloadTime: 0.653700 ms
+[Message:   BepInEx] BepInEx 5.4.21.0 - Graveyard Keeper (8/19/2023 9:04:59 PM)
+[Info   :   BepInEx] Running under Unity v2020.3.17.10769271
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.21.0]
+[Info   :   BepInEx] 1 patcher plugin loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 3 plugins to load
+[Info   :   BepInEx] Loading [Configuration Manager 18.0.1]
+[Info   :   BepInEx] Loading [GYK Helper Library 3.0.2]
+[Info   :  HarmonyX] ### Harmony id=p1xel8ted.gyk.gykhelper, version=2.9.0.0, location=E:\SteamLibrary\steamapps\common\Graveyard Keeper\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT, ptrsize:runtime/env=4/Bits64, Windows
+### Started from static void GYKHelper.Plugin::PatchWithHarmony(), location E:\SteamLibrary\steamapps\common\Graveyard Keeper\BepInEx\plugins\GYKHelper.dll
+### At 2023-08-21 10.24.25
+[Info   :  HarmonyX] Patching void EnvironmentEngine::OnEndOfDay() with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Actions::EnvironmentEngine_OnEndOfDay_Prefix()
+1 postfixes:
+* static void GYKHelper.Actions::EnvironmentEngine_OnEndOfDay_Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void EnvironmentEngine::OnEndOfDay()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void InGameMenuGUI::OnPressedSaveAndExit() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Actions::InGameMenuGUI_OnPressedSaveAndExit()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InGameMenuGUI::OnPressedSaveAndExit()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void GameSave::GlobalEventsCheck() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void GYKHelper.Actions::GameSave_GlobalEventsCheck()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void GameSave::GlobalEventsCheck()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching static void GameBalance::LoadGameBalance() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void GYKHelper.Actions::GameBalance_LoadGameBalance_Postfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on static void GameBalance::LoadGameBalance()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void WorldGameObject::Interact(WorldGameObject other_obj, bool interaction_start, float delta_time) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Actions::WorldGameObject_Interact_Prefix(WorldGameObject& __instance, WorldGameObject& other_obj)
+1 postfixes:
+* static void GYKHelper.Actions::WorldGameObject_Interact_Postfix(WorldGameObject& __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void WorldGameObject::Interact(WorldGameObject other_obj, bool interaction_start, float delta_time)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching static UnityEngine.Sprite EasySpritesCollection::GetSprite(string sprite_name, bool not_found_is_valid, string sprite_if_not_found) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.MiscFixes::EasySpritesCollection_GetSprite(Boolean& not_found_is_valid)
+
+[Info   :  HarmonyX] Running ILHook manipulator on static UnityEngine.Sprite EasySpritesCollection::GetSprite(string sprite_name, bool not_found_is_valid, string sprite_if_not_found)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching bool MultiInventory::IsEmpty(bool print_log) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.MiscFixes::MultiInventory_IsEmpty(Boolean& print_log)
+
+[Info   :  HarmonyX] Running ILHook manipulator on bool MultiInventory::IsEmpty(bool print_log)
+[Info   :  HarmonyX] Writing prefixes
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/data-1A679C40.dll
+[Info   :  HarmonyX] Patching static void DynamicLights::SearchForLightsInNewObject(UnityEngine.GameObject go) with 1 prefixes, 0 postfixes, 0 transpilers, 1 finalizers
+1 prefixes:
+* static bool GYKHelper.MiscFixes::DynamicLights_SearchForLightsInNewObject(UnityEngine.GameObject& go, System.Collections.Generic.List`1[[UnityEngine.Light, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]& ____lights_ground, System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]& ____lights_ground_k, System.Collections.Generic.List`1[[DynamicSpritePreset, Assembly-CSharp, Version=11.0.0.0, Culture=neutral, PublicKeyToken=null]]& ____dyn_lights_ground, System.Collections.Generic.List`1[[UnityEngine.Light, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]& ____lights_default, System.Collections.Generic.List`1[[DynamicLight, Assembly-CSharp, Version=11.0.0.0, Culture=neutral, PublicKeyToken=null]]& ____dyn_lights_default, System.Collections.Generic.List`1[[System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]& ____lights_default_k)
+1 finalizers:
+* static Exception GYKHelper.MiscFixes::DynamicLights_SearchForLightsInNewObject_Finalizer()
+
+[Info   :  HarmonyX] Running ILHook manipulator on static void DynamicLights::SearchForLightsInNewObject(UnityEngine.GameObject go)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing finalizers
+[Info   :  HarmonyX] Patching virtual void BaseGUI::Hide(bool play_hide_sound) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void GYKHelper.Patches::BaseGuiHidePostfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void BaseGUI::Hide(bool play_hide_sound)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching virtual void SaveSlotsMenuGUI::Open() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Patches::SaveSlotsMenuGUI_Open()
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void SaveSlotsMenuGUI::Open()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void GameSettings::ApplyLanguageChange() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void GYKHelper.Patches::GameSettingsApplyLanguageChangePostfix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void GameSettings::ApplyLanguageChange()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void SmartAudioEngine::OnEndNPCInteraction(ObjectDefinition npc) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Patches::OnEndNPCInteractionPrefix()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void SmartAudioEngine::OnEndNPCInteraction(ObjectDefinition npc)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void MovementComponent::UpdateMovement(UnityEngine.Vector2 dir, float delta_time) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Patches::Prefix(MovementComponent& __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void MovementComponent::UpdateMovement(UnityEngine.Vector2 dir, float delta_time)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void MainMenuGUI::Open(bool switch_music) with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void GYKHelper.Patches::MainMenuGUI_Open_Postfix(MainMenuGUI& __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void MainMenuGUI::Open(bool switch_music)
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void VendorGUI::Open(WorldGameObject vendor_obj, GJCommons+VoidDelegate on_hide) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Patches::VendorGUI_Open()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void VendorGUI::Open(WorldGameObject vendor_obj, GJCommons+VoidDelegate on_hide)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void VendorGUI::Hide(bool play_hide_sound) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Patches::VendorGUI_Hide()
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void VendorGUI::Hide(bool play_hide_sound)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void VendorGUI::OnClosePressed() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Patches::VendorGUI_OnClosePressed()
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void VendorGUI::OnClosePressed()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching static ObjectCraftDefinition GameBalanceBase::DataNotFound(string identifier) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static bool GYKHelper.DataNotFoundPatch::ObjectCraftDefinition_DataNotFound()
+
+[Info   :  HarmonyX] Running ILHook manipulator on static ObjectCraftDefinition GameBalanceBase::DataNotFound(string identifier)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void FlowCanvas.Nodes.Flow_TryFreeIdlePoint+<>c__DisplayClass0_0::<RegisterPorts>b__0(FlowCanvas.Flow f) with 0 prefixes, 0 postfixes, 1 transpilers, 0 finalizers
+1 transpilers:
+* static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> GYKHelper.MiscFixes+FlowTryFreeIdlePointRegisterPortsPatch::Flow_TryFreeIdlePoint_Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void FlowCanvas.Nodes.Flow_TryFreeIdlePoint+<>c__DisplayClass0_0::<RegisterPorts>b__0(FlowCanvas.Flow f)
+[Info   :  HarmonyX] Transpiling void FlowCanvas.Nodes.Flow_TryFreeIdlePoint+<>c__DisplayClass0_0::<RegisterPorts>b__0(FlowCanvas.Flow f)
+[Info   :  HarmonyX] Running transpiler static System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> GYKHelper.MiscFixes+FlowTryFreeIdlePointRegisterPortsPatch::Flow_TryFreeIdlePoint_Transpiler(System.Collections.Generic.IEnumerable<HarmonyLib.CodeInstruction> instructions)
+[Info   :   BepInEx] Loading [Save Now! 2.4.9]
+[Info   :  HarmonyX] ### Harmony id=p1xel8ted.gyk.savenow, version=2.9.0.0, location=E:\SteamLibrary\steamapps\common\Graveyard Keeper\BepInEx\core\0Harmony.dll, env/clr=4.0.30319.42000, platform=Win32NT, ptrsize:runtime/env=4/Bits64, Windows
+### Started from void SaveNow.Plugin::Awake(), location E:\SteamLibrary\steamapps\common\Graveyard Keeper\BepInEx\plugins\SaveNow.dll
+### At 2023-08-21 10.24.26
+[Info   : Save Now!] Applying patches for Save Now!
+[Info   :  HarmonyX] Patching void SaveSlotsMenuGUI::RedrawSlots(System.Collections.Generic.List<SaveSlotData> slot_datas, bool focus_on_first) with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void SaveNow.Plugin::SaveSlotsMenuGUI_RedrawSlots(System.Collections.Generic.List`1[[SaveSlotData, Assembly-CSharp, Version=11.0.0.0, Culture=neutral, PublicKeyToken=null]]& slot_datas, Boolean& focus_on_first)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void SaveSlotsMenuGUI::RedrawSlots(System.Collections.Generic.List<SaveSlotData> slot_datas, bool focus_on_first)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void InGameMenuGUI::OnPressedSaveAndExit() with 2 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+2 prefixes:
+* static bool SaveNow.Plugin::InGameMenuGUI_OnPressedSaveAndExit(InGameMenuGUI __instance)
+* static void GYKHelper.Actions::InGameMenuGUI_OnPressedSaveAndExit()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void InGameMenuGUI::OnPressedSaveAndExit()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching void SleepGUI::WakeUp() with 1 prefixes, 0 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void SaveNow.Plugin::SleepGUI_WakeUp()
+
+[Info   :  HarmonyX] Running ILHook manipulator on void SleepGUI::WakeUp()
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Patching virtual void InGameMenuGUI::Open() with 0 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 postfixes:
+* static void SaveNow.Plugin::InGameMenuGUI_Open(InGameMenuGUI& __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on virtual void InGameMenuGUI::Open()
+[Info   :  HarmonyX] Writing postfixes
+[Info   :  HarmonyX] Patching void MovementComponent::UpdateMovement(UnityEngine.Vector2 dir, float delta_time) with 1 prefixes, 1 postfixes, 0 transpilers, 0 finalizers
+1 prefixes:
+* static void GYKHelper.Patches::Prefix(MovementComponent& __instance)
+1 postfixes:
+* static void SaveNow.Plugin::MovementComponent_UpdateMovement(MovementComponent __instance)
+
+[Info   :  HarmonyX] Running ILHook manipulator on void MovementComponent::UpdateMovement(UnityEngine.Vector2 dir, float delta_time)
+[Info   :  HarmonyX] Writing prefixes
+[Info   :  HarmonyX] Writing postfixes
+[Message:   BepInEx] Chainloader startup complete
+[Debug  :   BepInEx] [UnityInput] Using LegacyInputSystem
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.174800 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 3778.
+Total: 3.689700 ms (FindLiveObjects: 0.133100 ms CreateObjectMapping: 0.131700 ms MarkObjects: 3.388400 ms  DeleteObjects: 0.036100 ms)
+
+The referenced script on this Behaviour (Game Object 'z') is missing!
+
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/data-0B2A12B0.dll
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/data-0AE33850.dll
+Fallback handler could not load library E:/SteamLibrary/steamapps/common/Graveyard Keeper/Graveyard Keeper_Data/Mono/data-331BA020.dll
+[Info   :   Console] Searching for compatible XInput library...
+Searching for compatible XInput library...
+[Info   :   Console] Found Xinput1_4.dll.
+Found Xinput1_4.dll.
+[Info   :GYK Helper Library] Game balance loaded. No mods attached to GameStartedPlaying Action.
+[Info   :GYK Helper Library] Game balance loaded. No mods attached to GameStartedPlaying Action.
+[Info   :GYK Helper Library] Final load task complete. Game starting. Invoking GameStartedPlaying Action for 2 attached mods.
+[Info   :GYK Helper Library] Type: GYKHelper.Actions, Method: CleanGerries
+[Info   :GYK Helper Library] Type: SaveNow.Plugin, Method: RestoreLocation
+[Info   :GYK Helper Library] AllGerries: Gerry: talking_skull, CustomTag: talking_skull, POS: (15070.0, -6194.0, -1287.3), Location: 
+[Info   :GYK Helper Library] AllGerries: Gerry: crafting_skull_3, CustomTag: crafting_skull_3, POS: (9648.0, -10850.0, -2268.4), Location: morgue
+[Info   :GYK Helper Library] Player returning to main menu. No mods attached to ReturnToMenu Action.
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 899697.
+Total: 669.181400 ms (FindLiveObjects: 44.139200 ms CreateObjectMapping: 15.880000 ms MarkObjects: 608.681300 ms  DeleteObjects: 0.480100 ms)
+
+[Info   :GYK Helper Library] Final load task complete. Game starting. Invoking GameStartedPlaying Action for 2 attached mods.
+[Info   :GYK Helper Library] Type: GYKHelper.Actions, Method: CleanGerries
+[Info   :GYK Helper Library] Type: SaveNow.Plugin, Method: RestoreLocation
+[Info   :GYK Helper Library] AllGerries: Gerry: talking_skull, CustomTag: talking_skull, POS: (15070.0, -6194.0, -1287.3), Location: 
+[Info   :GYK Helper Library] AllGerries: Gerry: crafting_skull_3, CustomTag: crafting_skull_3, POS: (9648.0, -10850.0, -2268.4), Location: morgue
+[Info   :GYK Helper Library] WGO interacted with (prefix). Invoking WorldGameObjectInteractPrefix Action for 1 attached mods.
+[Info   :GYK Helper Library] Type: GYKHelper.Actions, Method: WorldGameObject_Interact
+[Info   :GYK Helper Library] Object: teleport_inside, CustomTag: tp_house_a_, Location: (2832.0, -6600.0, -1374.4), Zone:home
+[Info   :GYK Helper Library] WGO interacted with (postfix). No mods attached to WorldGameObjectInteract Action.
+[Info   :GYK Helper Library] WGO interacted with (prefix). Invoking WorldGameObjectInteractPrefix Action for 1 attached mods.
+[Info   :GYK Helper Library] Type: GYKHelper.Actions, Method: WorldGameObject_Interact
+[Info   :GYK Helper Library] Object: teleport_outside, CustomTag: tp_house_b_, Location: (4472.0, -136.0, -27.4), Zone:mf_wood
+[Info   :GYK Helper Library] WGO interacted with (postfix). No mods attached to WorldGameObjectInteract Action.
+[Info   :GYK Helper Library] WGO interacted with (prefix). Invoking WorldGameObjectInteractPrefix Action for 1 attached mods.
+[Info   :GYK Helper Library] Type: GYKHelper.Actions, Method: WorldGameObject_Interact
+[Info   :GYK Helper Library] Object: bed, CustomTag: hero_bed, Location: (2376.0, -6216.0, -1294.5), Zone:home
+[Info   :GYK Helper Library] WGO interacted with (postfix). No mods attached to WorldGameObjectInteract Action.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 901974.
+Total: 712.664000 ms (FindLiveObjects: 45.997200 ms CreateObjectMapping: 16.325600 ms MarkObjects: 649.780500 ms  DeleteObjects: 0.560200 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 902040.
+Total: 740.053400 ms (FindLiveObjects: 42.367100 ms CreateObjectMapping: 15.987900 ms MarkObjects: 681.325300 ms  DeleteObjects: 0.372200 ms)
+
+[Info   :GYK Helper Library] WGO interacted with (prefix). Invoking WorldGameObjectInteractPrefix Action for 1 attached mods.
+[Info   :GYK Helper Library] Type: GYKHelper.Actions, Method: WorldGameObject_Interact
+[Info   :GYK Helper Library] Object: teleport_inside, CustomTag: tp_house_a_, Location: (2832.0, -6600.0, -1374.4), Zone:home
+[Info   :GYK Helper Library] WGO interacted with (postfix). No mods attached to WorldGameObjectInteract Action.
+Setting up 6 worker threads for Enlighten.
+  Thread -> id: 68d0 -> priority: 1 
+  Thread -> id: 1528 -> priority: 1 
+  Thread -> id: 2ce4 -> priority: 1 
+  Thread -> id: bb4 -> priority: 1 
+  Thread -> id: 69ac -> priority: 1 
+  Thread -> id: 63bc -> priority: 1 
